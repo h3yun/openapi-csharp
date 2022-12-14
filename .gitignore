@@ -1,0 +1,9 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/openapi-netcore/.vs
+/openapi-netcore/bin/Debug
+/openapi-netcore/obj
+/test-console/bin/Debug/netcoreapp3.1
+/test-console/obj
