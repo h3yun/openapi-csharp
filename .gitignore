@@ -17,3 +17,4 @@
 /test-console-netcore/obj
 /H3Yun.OpenApi.NetCore/bin/Debug
 /.vs
+/packages

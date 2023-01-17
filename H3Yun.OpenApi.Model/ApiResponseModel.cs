@@ -42,6 +42,6 @@
         /// <summary>
         /// 错误信息
         /// </summary>
-        public string? ErrorMessage { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }

@@ -5,11 +5,11 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3Yun.OpenApi.Framework", "H3Yun.OpenApi.Framework\H3Yun.OpenApi.Framework.csproj", "{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "H3Yun.OpenApi.Model", "H3Yun.OpenApi.Model\H3Yun.OpenApi.Model.csproj", "{E28ABD6B-CEA6-4928-BD66-0C027E362A16}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "H3Yun.OpenApi.NetCore", "H3Yun.OpenApi.NetCore\H3Yun.OpenApi.NetCore.csproj", "{FBD078CE-9CC8-4B55-AD29-5E5FCD469E90}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test-console-netcore", "test-console-netcore\test-console-netcore.csproj", "{81E7127D-BBF1-497E-AF18-7CB3A671E872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3Yun.OpenApi.Model", "H3Yun.OpenApi.Model\H3Yun.OpenApi.Model.csproj", "{CEBAE1AB-A1A2-474F-AE98-A17F37039138}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E28ABD6B-CEA6-4928-BD66-0C027E362A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E28ABD6B-CEA6-4928-BD66-0C027E362A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E28ABD6B-CEA6-4928-BD66-0C027E362A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E28ABD6B-CEA6-4928-BD66-0C027E362A16}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FBD078CE-9CC8-4B55-AD29-5E5FCD469E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FBD078CE-9CC8-4B55-AD29-5E5FCD469E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBD078CE-9CC8-4B55-AD29-5E5FCD469E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{81E7127D-BBF1-497E-AF18-7CB3A671E872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E7127D-BBF1-497E-AF18-7CB3A671E872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E7127D-BBF1-497E-AF18-7CB3A671E872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBAE1AB-A1A2-474F-AE98-A17F37039138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBAE1AB-A1A2-474F-AE98-A17F37039138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBAE1AB-A1A2-474F-AE98-A17F37039138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBAE1AB-A1A2-474F-AE98-A17F37039138}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
