@@ -10,7 +10,7 @@ namespace H3Yun.OpenApi.Framework
     public class H3YunAPI
     {
         private static readonly HttpClient _httpClient = new HttpClient();
-        private static readonly string _url = "https://infrastructure.h3yun.com/openapi/invoke";
+        private static readonly string _url = "https://www.h3yun.com/openapi/invoke";
         public H3YunAPI(string engineCode, string engineSecret)
         {
             _httpClient.DefaultRequestHeaders.Add("EngineCode", engineCode);
