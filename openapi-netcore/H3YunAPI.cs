@@ -11,13 +11,11 @@ namespace openapi_netcore
     {
         private static readonly HttpClient _httpClient = new HttpClient();
         private static readonly string _url = "https://infrastructure.h3yun.com/openapi/invoke";
-        private string _engineCode;
-        private string _engineSecret;
 
         public H3YunAPI(string engineCode, string engineSecret)
         {
-            this._engineCode = engineCode;
-            this._engineSecret = engineSecret;
+            _httpClient.DefaultRequestHeaders.Add("EngineCode", engineCode);
+            _httpClient.DefaultRequestHeaders.Add("EngineSecret", engineSecret);
         }
         /// <summary>
         /// 添加业务数据
@@ -31,9 +29,6 @@ namespace openapi_netcore
             {
                 throw new System.Exception("参数不合法");
             }
-
-            _httpClient.DefaultRequestHeaders.Add("EngineCode", this._engineCode);
-            _httpClient.DefaultRequestHeaders.Add("EngineSecret", this._engineSecret);
 
             var dicParams = new Dictionary<string, object>();
             dicParams.Add("ActionName", "CreateBizObject");
@@ -60,9 +55,6 @@ namespace openapi_netcore
                 throw new System.Exception("参数不合法");
             }
 
-            _httpClient.DefaultRequestHeaders.Add("EngineCode", this._engineCode);
-            _httpClient.DefaultRequestHeaders.Add("EngineSecret", this._engineSecret);
-
             var dicParams = new Dictionary<string, string>();
             dicParams.Add("ActionName", "LoadBizObject");
             dicParams.Add("SchemaCode", schemaCode);
@@ -87,20 +79,17 @@ namespace openapi_netcore
             return dataModel;
         }
 
-        public async Task<APIResponseModel> GetList(string schemaCode)
+        public async Task<APIResponseModel> GetList(string schemaCode, string[] objectIds)
         {
-            if (string.IsNullOrWhiteSpace(schemaCode) || string.IsNullOrWhiteSpace(objectId))
+            if (string.IsNullOrWhiteSpace(schemaCode) || string.IsNullOrWhiteSpace(bizObjectId))
             {
                 throw new System.Exception("参数不合法");
             }
 
-            _httpClient.DefaultRequestHeaders.Add("EngineCode", this._engineCode);
-            _httpClient.DefaultRequestHeaders.Add("EngineSecret", this._engineSecret);
-
             var dicParams = new Dictionary<string, string>();
             dicParams.Add("ActionName", "LoadBizObjects");
             dicParams.Add("SchemaCode", schemaCode);
-            dicParams.Add("Filter", objectId);
+            dicParams.Add("Filter", bizObjectId);
 
             var reqBody = Newtonsoft.Json.JsonConvert.SerializeObject(dicParams);
             var content = new StringContent(reqBody, Encoding.UTF8, "application/json");
