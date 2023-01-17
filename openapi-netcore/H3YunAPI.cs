@@ -79,7 +79,7 @@ namespace openapi_netcore
             return dataModel;
         }
 
-        public async Task<APIResponseModel> GetList(string schemaCode, string[] objectIds)
+        public async Task<APIResponseModel> Get(string schemaCode, string[] objectIds)
         {
             if (string.IsNullOrWhiteSpace(schemaCode) || string.IsNullOrWhiteSpace(bizObjectId))
             {
@@ -108,6 +108,46 @@ namespace openapi_netcore
             //部分类型会返回JObject需要用户手动处理
             var dataModel = Newtonsoft.Json.JsonConvert.DeserializeObject<APIResponseModel>(dataStr);
             return dataModel;
+        }
+
+        public async Task<APIResponseModel> Get(string schemaCode, Filter filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<APIResponseModel> Update(string schemaCode, Dictionary<string, object> data)
+        {
+            if (string.IsNullOrWhiteSpace(schemaCode) || data == null || data.Count == 0)
+            {
+                throw new System.Exception("参数不合法");
+            }
+
+            var dicParams = new Dictionary<string, object>();
+            dicParams.Add("ActionName", "UpdateBizObject");
+            dicParams.Add("SchemaCode", schemaCode);
+            dicParams.Add("BizObject", Newtonsoft.Json.JsonConvert.SerializeObject(data));
+            dicParams.Add("IsSubmit", "true");
+
+            var reqBody = Newtonsoft.Json.JsonConvert.SerializeObject(dicParams);
+            var content = new StringContent(reqBody, Encoding.UTF8, "application/json");
+
+
+            var response = await _httpClient.PostAsync(_url, content);
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new System.Exception(response.Content.ReadAsStringAsync().Result);
+            }
+            return true;
+        }
+
+        public async Task<APIResponseModel> Remove(string schemaCode, string objectId)
+        {
+            throw new Exception();
+        }
+
+        public async Task<APIResponseModel> Remove(string schemaCode, Filter filter)
+        {
+            throw new NotImplementedException();
         }
     }
 }

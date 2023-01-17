@@ -7,3 +7,7 @@
 /openapi-netcore/obj
 /test-console/bin/Debug/netcoreapp3.1
 /test-console/obj
+/H3Yun.OpenApi.Framework/obj/Debug
+/H3Yun.OpenApi.Model/bin/Debug
+/H3Yun.OpenApi.Model/obj
+/H3Yun.OpenApi.NetCore/obj

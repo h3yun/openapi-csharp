@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "openapi-netcore", "openapi-netcore.csproj", "{445FC693-F746-477D-AC13-6749A0B0F5D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test-console", "..\test-console\test-console.csproj", "{A8DC1292-D88D-4B99-ABF3-5148A009CD33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3Yun.OpenApi.NetCore", "..\H3Yun.OpenApi.NetCore\H3Yun.OpenApi.NetCore.csproj", "{21B07C78-40EF-4539-A7D3-A33B38A073E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3Yun.OpenApi.Framework", "..\H3Yun.OpenApi.Framework\H3Yun.OpenApi.Framework.csproj", "{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3Yun.OpenApi.Model", "..\H3Yun.OpenApi.Model\H3Yun.OpenApi.Model.csproj", "{A1132FDC-DFBC-4D89-8351-D42962F7665D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{445FC693-F746-477D-AC13-6749A0B0F5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445FC693-F746-477D-AC13-6749A0B0F5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445FC693-F746-477D-AC13-6749A0B0F5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445FC693-F746-477D-AC13-6749A0B0F5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DC1292-D88D-4B99-ABF3-5148A009CD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DC1292-D88D-4B99-ABF3-5148A009CD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DC1292-D88D-4B99-ABF3-5148A009CD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DC1292-D88D-4B99-ABF3-5148A009CD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B07C78-40EF-4539-A7D3-A33B38A073E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B07C78-40EF-4539-A7D3-A33B38A073E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B07C78-40EF-4539-A7D3-A33B38A073E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B07C78-40EF-4539-A7D3-A33B38A073E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C52DA772-06B6-4B9D-88C5-70BF8B0836E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1132FDC-DFBC-4D89-8351-D42962F7665D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1132FDC-DFBC-4D89-8351-D42962F7665D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1132FDC-DFBC-4D89-8351-D42962F7665D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1132FDC-DFBC-4D89-8351-D42962F7665D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACD55A06-1BF9-4AC7-AB87-80BFD4104991}
+	EndGlobalSection
+EndGlobal
