@@ -81,7 +81,7 @@ namespace openapi_netcore
 
         public async Task<APIResponseModel> Get(string schemaCode, string[] objectIds)
         {
-            if (string.IsNullOrWhiteSpace(schemaCode) || string.IsNullOrWhiteSpace(bizObjectId))
+            if (string.IsNullOrWhiteSpace(schemaCode) || objectIds == null)
             {
                 throw new System.Exception("参数不合法");
             }
@@ -89,7 +89,7 @@ namespace openapi_netcore
             var dicParams = new Dictionary<string, string>();
             dicParams.Add("ActionName", "LoadBizObjects");
             dicParams.Add("SchemaCode", schemaCode);
-            dicParams.Add("Filter", bizObjectId);
+            //dicParams.Add("Filter", bizObjectId);
 
             var reqBody = Newtonsoft.Json.JsonConvert.SerializeObject(dicParams);
             var content = new StringContent(reqBody, Encoding.UTF8, "application/json");
@@ -137,7 +137,7 @@ namespace openapi_netcore
             {
                 throw new System.Exception(response.Content.ReadAsStringAsync().Result);
             }
-            return true;
+            return null;
         }
 
         public async Task<APIResponseModel> Remove(string schemaCode, string objectId)

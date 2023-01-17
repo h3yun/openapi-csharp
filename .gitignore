@@ -11,3 +11,5 @@
 /H3Yun.OpenApi.Model/bin/Debug
 /H3Yun.OpenApi.Model/obj
 /H3Yun.OpenApi.NetCore/obj
+/H3Yun.OpenApi.Framework/bin/Debug
+/H3Yun.OpenApi.NetCore/bin/Debug/net6.0
