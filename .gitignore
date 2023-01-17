@@ -13,3 +13,6 @@
 /H3Yun.OpenApi.NetCore/obj
 /H3Yun.OpenApi.Framework/bin/Debug
 /H3Yun.OpenApi.NetCore/bin/Debug/net6.0
+/test-console-netcore/bin/Debug/net6.0
+/test-console-netcore/obj
+/H3Yun.OpenApi.NetCore/bin/Debug

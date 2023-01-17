@@ -4,6 +4,9 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
     <Title>氚云OpenApi公共模型</Title>
+    <RepositoryUrl>https://github.com/h3yun/openapi-csharp/tree/main/H3Yun.OpenApi.Model</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/h3yun/openapi-csharp</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

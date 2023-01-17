@@ -9,4 +9,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\H3Yun.OpenApi.Model\H3Yun.OpenApi.Model.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace openapi_netcore.Model
+﻿namespace H3Yun.OpenApi.Model
 {
     public class Filter
     {

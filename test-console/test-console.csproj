@@ -6,8 +6,4 @@
     <RootNamespace>test_console</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\openapi-netcore\openapi-netcore.csproj" />
-  </ItemGroup>
-
 </Project>

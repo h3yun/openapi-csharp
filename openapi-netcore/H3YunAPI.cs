@@ -1,4 +1,5 @@
-﻿using openapi_netcore.Model;
+﻿using H3Yun.OpenApi.Model;
+using openapi_netcore.Model;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
